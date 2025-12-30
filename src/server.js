@@ -17,7 +17,7 @@ const PORT = ENV.PORT;
 //   res.send('Hello, World!');
 // });
 
-if (ENV.NODE_ENV === 'development') {
+if (ENV.NODE_ENV === 'production') {
   cronJob.start();
 }
 
