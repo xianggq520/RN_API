@@ -4,13 +4,13 @@ import { db } from './config/db.js';
 import { favoritesTable } from './db/schema.js';
 import { and, eq } from 'drizzle-orm';
 import cronJob from './config/cron.js';
-// import cors from 'cors';
+import cors from 'cors';
 
 const app = express();
 const PORT = ENV.PORT;
 
 // Middleware
-// app.use(cors());
+app.use(cors());
 
 // Sample route
 // app.get('/', (req, res) => {
